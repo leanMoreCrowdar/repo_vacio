@@ -9,7 +9,19 @@ Feature: feature de prueba para card 3537
       consectetur adipiscing elit.
       """
     And este es un ejemplo usando "Cucumber Expression"
+      """markdown
+      Some Title, Eh?
+      ===============
+      Here is the first paragraph of my blog post. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit.
+      """
     And este es un ejemplo utilizando Regex clásica
+      ```markdown
+      Some Title, Eh?
+      ===============
+      Here is the first paragraph of my blog post. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit.
+      ```
     And ahora vamos a hacer un data table
       | nombre    | precio |
       | producto1 | 100    |
