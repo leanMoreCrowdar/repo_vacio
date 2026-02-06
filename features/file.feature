@@ -1,5 +1,7 @@
+@lean
 Feature: feature de prueba para card 3537
-
+  
+  @prueba @Automated @Smoke @Candidate 
   Scenario: Usuario envía un mensaje multilínea
     When este es un ejemplo usando Doc String:
       """
@@ -30,3 +32,11 @@ Feature: feature de prueba para card 3537
     Hola equipo,
     """
     And test commit
+    
+  @Candidate 
+  Scenario: Envío exitoso de un mensaje multilínea
+    Given el usuario está en la página de mensajes
+    When el usuario ingresa un mensaje multilínea en el campo de texto
+    And hace clic en el botón "Enviar"
+    Then el sistema muestra el mensaje enviado en el historial de mensajes  
+    
