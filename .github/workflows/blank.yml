@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Mostrar mensaje por consola
+        run: echo "¡Hola! Este es mi mensaje personalizado en consola 🎉"
